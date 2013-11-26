@@ -102,7 +102,7 @@ Contributing:
 * Create a branch (git checkout -b my_connectDb)
 * Commit your changes (git commit -am "Added New change")
 * Push to the branch (git push origin my_connectDb)
-* Open a Pull Request
+* Open a [Pull Request](https://github.com/BastinRobin/connectDb.js/pulls)
 * Enjoy a refreshing Diet Coke and wait
 
 
