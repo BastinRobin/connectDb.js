@@ -45,7 +45,7 @@
 
 		//Remove a specific row
 		removeRow : function(key) {
-			localStorage.clear(key);
+			localStorage.removeItem(key);
 		},
 
 		//View Complete Row by iteration key values
@@ -72,8 +72,13 @@
 
 		//Get Secure storage array
 		getSecureRow : function (key) {
-			return sessionStorage.getItem(key)
+			return sessionStorage.getItem(key);
 		},
+
+		//Remove a secure row
+		removeSecureRow : function (key) {
+			sessionStorage.removeItem(key);
+		}
 
 	}	
 })(window);

@@ -52,7 +52,12 @@ connectDb.clear();
 
 Create a New Key ,Value Pair DB
 ```html
-connectDb.createDb(key, value);
+connectDb.createRow(key, value);
+```
+
+Retrieve a row using key
+```html
+connectDb.getRow(key);
 ```
 
 Remove a Row from Db
@@ -71,7 +76,24 @@ connectDb.storeJSON(key, json);
 ```
 
 Retrieve JSON array from DB using Key
+```html
 connectDb.readJSON(key);
+```
+
+Create secure row using Key, Value pair
+```html
+connectDb.createSecureRow(key, value);
+```
+
+Retrieve secure row using key
+```html
+connectDb.getSecureRow(key);
+```
+
+Remove secure row using key
+```html
+connectDb.removeSecureRow(key);
+``` 
 
 Contributing:
 ------------
