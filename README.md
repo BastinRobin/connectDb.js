@@ -17,3 +17,16 @@ ConnectDb was started as an open source project which can be forked by developer
 
 Let us make the computing open.
 
+Development Version:
+-------------------
+```html
+<script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.js"></script>
+```
+
+
+Production Version :
+--------------------
+
+```html
+<script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.min.js"></script>
+```
