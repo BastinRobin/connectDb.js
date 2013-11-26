@@ -15,7 +15,7 @@ Features:
 
 ConnectDb was started as an open source project which can be forked by developers and contribute to our projects.
 
-Let us make the computing open.
+Let us play with mobile environment
 
 Development Version:
 -------------------
@@ -72,6 +72,19 @@ connectDb.storeJSON(key, json);
 
 Retrieve JSON array from DB using Key
 connectDb.readJSON(key);
+
+Contributing:
+------------
+
+* Fork it.
+* Create a branch (git checkout -b my_connectDb)
+* Commit your changes (git commit -am "Added New change")
+* Push to the branch (git push origin my_connectDb)
+* Open a Pull Request
+* Enjoy a refreshing Diet Coke and wait
+
+
+
 License
 -------
 This software is free to use under the GNU license.

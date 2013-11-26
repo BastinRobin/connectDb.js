@@ -34,8 +34,13 @@
 		},
 
 		//Create New Collection or Db
-		createDb : function (key, value) {
+		createRow : function (key, value) {
 			localStorage.setItem(key, value);
+		},
+
+		//Retrieve a JSON with key
+		getRow : function (key) {
+			return localStorage.getItem(key);
 		},
 
 		//Remove a specific row
@@ -58,6 +63,17 @@
 		//Read JSON from Db or Collections
 		readJSON: function(key) {
 			return JSON.parse(localStorage[key]);
-		}
-	}
+		},
+
+		//Secure Storage using session
+		createSecureRow : function (key, value) {
+			sessionStorage.setItem(key, value);
+		},
+
+		//Get Secure storage array
+		getSecureRow : function (key) {
+			return sessionStorage.getItem(key)
+		},
+
+	}	
 })(window);
