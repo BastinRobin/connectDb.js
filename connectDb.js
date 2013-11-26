@@ -22,7 +22,7 @@
 
 		//Check if the any db exist
 		isempty: function() {
-			if(localStorage.length > 0) {
+			if(localStorage.length == 0) {
 				return true;
 			} else { return false; }
 		},
@@ -30,7 +30,7 @@
 		//Clear any existing db completely
 		clear : function() {
 			localStorage.clear();
-			console.log('Cleared Successfully');
+			return true;
 		},
 
 		//Create New Collection or Db

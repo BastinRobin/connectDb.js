@@ -49,6 +49,29 @@ Clear complete db if exist.
 ```html
 connectDb.clear();
 ```
+
+Create a New Key ,Value Pair DB
+```html
+connectDb.createDb(key, value);
+```
+
+Remove a Row from Db
+```html
+connectDb.removeRow(key);
+```
+
+View all rows in DB.
+```html
+connectDb.viewRow();
+```
+
+Store any JSON array to the Db as key value pair
+```html
+connectDb.storeJSON(key, json);
+```
+
+Retrieve JSON array from DB using Key
+connectDb.readJSON(key);
 License
 -------
 This software is free to use under the GNU license.
