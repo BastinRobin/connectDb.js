@@ -30,3 +30,8 @@ Production Version :
 ```html
 <script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.min.js"></script>
 ```
+
+
+License
+-------
+This software is free to use under the GNU license.
