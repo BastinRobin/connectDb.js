@@ -31,7 +31,24 @@ Production Version :
 <script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.min.js"></script>
 ```
 
+Usage:
+------
+Check if browser supports connectDb.js.
 
+```html
+connectDb.checkBrowser();
+```
+
+Check if any db exists.
+
+```html
+connectDb.isempty();
+```
+
+Clear complete db if exist.
+```html
+connectDb.clear();
+```
 License
 -------
 This software is free to use under the GNU license.
