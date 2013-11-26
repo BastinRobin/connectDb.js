@@ -1,6 +1,5 @@
 ConnectDb.js
 ============
-![Logos In Pure CSS](https://raw.github.com/bchanx/logos-in-pure-css/master/banner.png)
 
 ConnectDb is an javascript framework for building browser based database web, mobile applications. It is an open source framework which makes easy to Connect, Query and Report.
 
