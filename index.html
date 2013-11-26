@@ -3,6 +3,16 @@
 <head>
 	<title>ConnectDb.js</title>
 </head><body>
-
 <script type="text/javascript" src="connectDb.js"></script>
+<script>
+	var rob = [
+	{name:"Bastin", age:25},
+	{name:"Sam", age:22},
+	{name:"Sofer", age:23},
+	{name:"Geo", age:22}];
+
+	connectDb.storeJSON('family', rob);
+
+	console.log(connectDb.readJSON('family'));
+</script>
 </body></head>

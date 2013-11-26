@@ -11,7 +11,7 @@
 	//Initialization of ConnectDB Framework
 	connectDb = {
 		version : "0.1",
-		date : "Nov-2013",
+		date : "25/Nov/2013",
 
 		//Check if the browser supports ConnectDB
 		checkBrowser: function() {
@@ -21,7 +21,7 @@
 		},
 
 		//Check if the any db exist
-		checkEmpty: function() {
+		isempty: function() {
 			if(localStorage.length > 0) {
 				return true;
 			} else { return false; }
@@ -51,13 +51,13 @@
 		},
 
 		//Create JSON Db or collection
-		createJSON: function(key, json) {
+		storeJSON: function(key, json) {
 			localStorage.setItem(key, JSON.stringify(json));
 		},
 
 		//Read JSON from Db or Collections
 		readJSON: function(key) {
-			return JSON.parse(localStorage.key)
+			return JSON.parse(localStorage[key]);
 		}
 	}
 })(window);
