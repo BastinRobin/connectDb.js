@@ -23,6 +23,12 @@ Development Version:
 <script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.js"></script>
 ```
 
+Production Version:
+-------------------
+```html
+<script type="text/javascript" src="https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.min.js"></script>
+```
+
 Usage:
 ------
 Check if browser supports connectDb.js.
