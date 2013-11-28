@@ -70,12 +70,12 @@ connectDb.viewRow();
 
 Store any JSON array to the Db as key value pair
 ```html
-connectDb.storeJSON(key, json);
+connectDb.setJSON(key, json);
 ```
 
 Retrieve JSON array from DB using Key
 ```html
-connectDb.readJSON(key);
+connectDb.getJSON(key);
 ```
 
 Create secure row using Key, Value pair
