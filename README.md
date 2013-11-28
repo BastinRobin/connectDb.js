@@ -1,6 +1,8 @@
 ConnectDb.js
 ============
 ![ConnectDb](https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-prn2/1465379_561069470625698_23440564_n.png)
+
+![ConnectDb.js stable v0.1](http://b.repl.ca/v1/ConnectDb.js-stable_v0.1-brightgreen.png)
 ConnectDb is an javascript framework for building browser based database web, mobile applications. It is an open source framework which makes easy to Connect, Query and Report.
 
 ConnectDb.js is an advanced implementation of the HTML5 Local Storage API.
