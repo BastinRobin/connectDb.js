@@ -71,6 +71,12 @@
 				return false;
 			}
 		},
+
+		//Check the size of JSON array		
+		length : function (key) {
+			return JSON.parse(localStorage[key]).length;
+		},
+
 		//Secure Storage using session
 		createSecureRow : function (key, value) {
 			sessionStorage.setItem(key, value);
