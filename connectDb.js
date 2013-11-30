@@ -38,7 +38,9 @@
 
 		//Create New Collection or Db
 		createRow : function (key, value) {
-			localStorage.setItem(key, value);
+			if(!localStorage[key]) {
+				localStorage.setItem(key, value);
+			}
 		},
 
 		//Retrieve a JSON with key
@@ -60,7 +62,9 @@
 
 		//Create JSON Db or collection
 		setJSON: function(key, json) {
-			localStorage.setItem(key, JSON.stringify(json));
+			if(!localStorage[key]) {
+				localStorage.setItem(key, JSON.stringify(json));
+			}
 		},
 
 		//Read JSON from Db or Collections
