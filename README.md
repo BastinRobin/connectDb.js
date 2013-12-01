@@ -49,7 +49,10 @@ Clear complete db if exist.
 ```html
 connectDb.clear();
 ```
-
+Check the length of DB
+```html
+connectDb.length(key);
+```
 Create a New Key ,Value Pair DB
 ```html
 connectDb.createRow(key, value);
