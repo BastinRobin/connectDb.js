@@ -99,6 +99,15 @@
 		//Get the keys of JSON
 		keys : function(json) {
 			return Object.keys(json);
+		},
+
+		//Get the values of JSON array
+		values : function(json) {
+			var value = [];
+			for (var key in json) {
+				val.push(json[key]);
+			}
+			return value;
 		}
 	}	
 })(window);
