@@ -103,6 +103,15 @@ Remove secure row using key
 _db.removeSecureRow(key);
 ``` 
 
+Get the list of keys of JSON array
+```html
+_db.keys(json);
+```
+
+Get the list of values of JSON array
+```html
+_db.values(json);
+```
 Contributing:
 ------------
 
