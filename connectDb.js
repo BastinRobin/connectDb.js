@@ -116,5 +116,21 @@
 			return new Date().time();
 		}),
 
+		//Pluck specific attributes
+		pluck : function(json, key) {
+			value = [];
+			json.forEach(function(d) {
+				value.push(d[key]);
+			})
+			return value;
+		},
+
+		//Get the min of JSON array 
+		//http://stackoverflow.com/a/11143045
+		min : function(json, key) {
+			var arr = Object.keys(_db.pluck(json, key)).map(function (key) { return _db.pluck(json, key)[key]; });
+			return Math.min.apply( null, arr );
+		}
+
 	}	
 })(window);

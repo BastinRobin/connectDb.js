@@ -97,12 +97,10 @@ Retrieve secure row using key
 ```html
 _db.getSecureRow(key);
 ```
-
 Remove secure row using key
 ```html
 _db.removeSecureRow(key);
-``` 
-
+```
 Get the list of keys of JSON array
 ```html
 _db.keys(json);
@@ -116,6 +114,12 @@ _db.values(json);
 Get the current time
 ```html
 _db.time();
+```
+
+Pluck specific attributes values from JSON array
+returns a list
+```html
+_db.pluck(json, key);
 ```
 Contributing:
 ------------
