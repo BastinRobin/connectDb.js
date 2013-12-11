@@ -33,6 +33,11 @@ Production Version:
 
 Usage:
 ------
+Check the version of connectDb.js library
+```html
+_db.version();
+```
+
 Check if browser supports connectDb.js.
 
 ```html
