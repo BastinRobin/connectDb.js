@@ -112,6 +112,11 @@ Get the list of values of JSON array
 ```html
 _db.values(json);
 ```
+
+Get the current time
+```html
+_db.time();
+```
 Contributing:
 ------------
 

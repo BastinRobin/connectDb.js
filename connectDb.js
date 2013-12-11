@@ -109,6 +109,12 @@
 				val.push(json[key]);
 			}
 			return value;
-		}
+		},
+
+		//Get Current time 
+		time : (Date.now || function() {
+			return new Date().time();
+		}),
+
 	}	
 })(window);
