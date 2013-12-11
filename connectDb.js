@@ -94,7 +94,11 @@
 		//Remove a secure row
 		removeSecureRow : function (key) {
 			sessionStorage.removeItem(key);
-		}
+		},
 
+		//Get the keys of JSON
+		keys : function(json) {
+			return Object.keys(json);
+		}
 	}	
 })(window);
