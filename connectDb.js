@@ -11,8 +11,9 @@
 	_db = {
 		version : "0.1",
 		date : "25/Nov/2013",
-
+		//DB means the key, value pair
 		//Check if the browser supports ConnectDB
+		//ConnectDb is a part of HTML5 Offline Storage and NoSQL technology*
 		checkBrowser: function() {
 			if(window.localStorage) { 
 				return true; 
@@ -30,7 +31,7 @@
 			}
 		},
 
-		//Clear any existing db completely
+		//Clear any existing db completely *
 		clear : function() {
 			localStorage.clear();
 			return true;
