@@ -36,66 +36,66 @@ Usage:
 Check if browser supports connectDb.js.
 
 ```html
-connectDb.checkBrowser();
+_db.checkBrowser();
 ```
 
 Check if any db exists.
 
 ```html
-connectDb.isempty();
+_db.isempty();
 ```
 
 Clear complete db if exist.
 ```html
-connectDb.clear();
+_db.clear();
 ```
 Check the length of DB
 ```html
-connectDb.length(key);
+_db.length(key);
 ```
 Create a New Key ,Value Pair DB
 ```html
-connectDb.createRow(key, value);
+_db.createRow(key, value);
 ```
 
 Retrieve a row using key
 ```html
-connectDb.getRow(key);
+_db.getRow(key);
 ```
 
 Remove a Row from Db
 ```html
-connectDb.removeRow(key);
+_db.removeRow(key);
 ```
 
 View all rows in DB.
 ```html
-connectDb.viewRow();
+_db.viewRow();
 ```
 
 Store any JSON array to the Db as key value pair
 ```html
-connectDb.setJSON(key, json);
+_db.setJSON(key, json);
 ```
 
 Retrieve JSON array from DB using Key
 ```html
-connectDb.getJSON(key);
+_db.getJSON(key);
 ```
 
 Create secure row using Key, Value pair
 ```html
-connectDb.createSecureRow(key, value);
+_db.createSecureRow(key, value);
 ```
 
 Retrieve secure row using key
 ```html
-connectDb.getSecureRow(key);
+_db.getSecureRow(key);
 ```
 
 Remove secure row using key
 ```html
-connectDb.removeSecureRow(key);
+_db.removeSecureRow(key);
 ``` 
 
 Contributing:

@@ -8,7 +8,7 @@
 
 (function () {
 	//Initialization of ConnectDB Framework
-	connectDb = {
+	_db = {
 		version : "0.1",
 		date : "25/Nov/2013",
 
