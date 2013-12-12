@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Connectdb.js by BastinRobin</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Connectdb.js</h1>
+        <p>ConnectDb is a lightweight javascript framework for building browser based database web, mobile applications using NoSQL. It is an open source framework which makes easy to Connect, Query and Report.</p>
+
+        <p class="view"><a href="https://github.com/BastinRobin/connectDb.js">View the Project on GitHub <small>BastinRobin/connectDb.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/BastinRobin/connectDb.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/BastinRobin/connectDb.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/BastinRobin/connectDb.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="connectdbjs" class="anchor" href="#connectdbjs"><span class="octicon octicon-link"></span></a>ConnectDb.js</h1>
+
+<p><img src="https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-prn2/1465379_561069470625698_23440564_n.png" alt="ConnectDb"></p>
+
+<p><img src="http://b.repl.ca/v1/ConnectDb.js-stable_v0.1-brightgreen.png" alt="ConnectDb.js stable v0.1">
+ConnectDb is an javascript framework for building browser based database web, mobile applications. It is an open source framework which makes easy to Connect, Query and Report.</p>
+
+<p>ConnectDb.js is an advanced implementation of the HTML5 Local Storage API.
+It is now easy to use the complete offline storage for any purpose of your development process.</p>
+
+<p>Features:</p>
+
+<ul>
+<li>Easy connection to Offline Storage (HTML5)</li>
+<li>Easy Querying from collections</li>
+<li>Easy to update the data</li>
+<li>Fastest DB processing</li>
+<li>More to come.</li>
+</ul><p>ConnectDb was started as an open source project which can be forked by developers and contribute to our projects.</p>
+
+<p>Let us play with mobile environment</p>
+
+<h2>
+<a name="development-version" class="anchor" href="#development-version"><span class="octicon octicon-link"></span></a>Development Version:</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="production-version" class="anchor" href="#production-version"><span class="octicon octicon-link"></span></a>Production Version:</h2>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://github.com/BastinRobin/connectDb.js/raw/master/connectDb.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
+
+<p>Check the version of connectDb.js library</p>
+
+<div class="highlight highlight-html"><pre>_db.version();
+</pre></div>
+
+<p>Check if browser supports connectDb.js.</p>
+
+<div class="highlight highlight-html"><pre>_db.checkBrowser();
+</pre></div>
+
+<p>Check if any db exists.</p>
+
+<div class="highlight highlight-html"><pre>_db.isempty();
+</pre></div>
+
+<p>Check if key already exists</p>
+
+<div class="highlight highlight-html"><pre>_db.isKey(key);
+</pre></div>
+
+<p>Clear complete db if exist.</p>
+
+<div class="highlight highlight-html"><pre>_db.clear();
+</pre></div>
+
+<p>Check the length of DB</p>
+
+<div class="highlight highlight-html"><pre>_db.length(key);
+</pre></div>
+
+<p>Create a New Key ,Value Pair DB</p>
+
+<div class="highlight highlight-html"><pre>_db.createRow(key, value);
+</pre></div>
+
+<p>Retrieve a row using key</p>
+
+<div class="highlight highlight-html"><pre>_db.getRow(key);
+</pre></div>
+
+<p>Remove a Row from Db</p>
+
+<div class="highlight highlight-html"><pre>_db.removeRow(key);
+</pre></div>
+
+<p>View all rows in DB.</p>
+
+<div class="highlight highlight-html"><pre>_db.viewRow();
+</pre></div>
+
+<p>Store any JSON array to the Db as key value pair</p>
+
+<div class="highlight highlight-html"><pre>_db.setJSON(key, json);
+</pre></div>
+
+<p>Retrieve JSON array from DB using Key</p>
+
+<div class="highlight highlight-html"><pre>_db.getJSON(key);
+</pre></div>
+
+<p>Update existing row using key with JSON data</p>
+
+<div class="highlight highlight-html"><pre>_db.update(key, json);
+</pre></div>
+
+<p>Create secure row using Key, Value pair</p>
+
+<div class="highlight highlight-html"><pre>_db.createSecureRow(key, value);
+</pre></div>
+
+<p>Retrieve secure row using key</p>
+
+<div class="highlight highlight-html"><pre>_db.getSecureRow(key);
+</pre></div>
+
+<p>Remove secure row using key</p>
+
+<div class="highlight highlight-html"><pre>_db.removeSecureRow(key);
+</pre></div>
+
+<p>Get the list of keys of JSON array</p>
+
+<div class="highlight highlight-html"><pre>_db.keys(json);
+</pre></div>
+
+<p>Get the list of values of JSON array</p>
+
+<div class="highlight highlight-html"><pre>_db.values(json);
+</pre></div>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing:</h2>
+
+<ul>
+<li>Fork it.</li>
+<li>Create a branch (git checkout -b my_connectDb)</li>
+<li>Commit your changes (git commit -am "Added New change")</li>
+<li>Push to the branch (git push origin my_connectDb)</li>
+<li>Open a <a href="https://github.com/BastinRobin/connectDb.js/pulls">Pull Request</a>
+</li>
+<li>Enjoy a refreshing Diet Coke and wait</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This software is free to use under the GNU license.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/BastinRobin">BastinRobin</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
