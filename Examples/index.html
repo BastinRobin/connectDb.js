@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>ConnectDb.js</title>
+</head><body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+		  <div class="form-group">
+		    <label for="todo">Add Todo</label>
+		    <input type="text" class="form-control todo" placeholder="Todo">
+		  </div>
+		  <button class="btn btn-default add">Add</button>
+		  <button class="btn btn-default delete">Delete All</button>
+		</div>
+		<div class="col-md-4">
+			<ul class="list-group"></ul>
+		</div>
+	</div>
+</div>
+<script src="js/connectDb.js"></script>	
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		if(_db.isKey('todos')) {
+			var data = _db.getJSON('todos');
+			data.forEach(function(d) {
+				$('ul')
+					.append('<li class="list-group-item" >'+d['name']+'<label class="label label-danger close_box pull-right">x</label></li>');
+			});
+		} else {
+			//Create a db
+			var data = _db.setJSON('todos', []);
+			window.d = data;
+		}
+
+		$('.add').click(function() {
+			//get the value from todos
+			if($('.todo').val()) {
+				$('ul').append('<li class="list-group-item" >'+$('.todo').val()+'<label class="label label-danger close_box pull-right">x</label></li>');
+				data.push({'name': $('.todo').val()});
+				_db.update('todos', data);
+			}
+		});
+
+		$('.delete').click(function() {
+			_db.clear();
+		});
+	});
+
+	$(document).on('click','.close_box',function(){
+	    $(this).parent().remove();
+	});
+</script>
+</body></head>
