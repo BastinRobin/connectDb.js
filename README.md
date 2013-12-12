@@ -9,7 +9,7 @@ ConnectDb.js is an advanced implementation of the HTML5 Local Storage API.
 It is now easy to use the complete offline storage for any purpose of your development process.
 
 Features:
-* Easy connection to DB
+* Easy connection to Offline Storage (HTML5)
 * Easy Querying from collections
 * Easy to update the data
 * Fastest DB processing
