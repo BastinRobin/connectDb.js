@@ -5,18 +5,28 @@
 </head><body>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">
+	body { background: #0C293A; }
+</style>
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
-		  <div class="form-group">
-		    <label for="todo">Add Todo</label>
-		    <input type="text" class="form-control todo" placeholder="Todo">
-		  </div>
-		  <button class="btn btn-default add">Add</button>
-		  <button class="btn btn-default delete">Delete All</button>
-		</div>
-		<div class="col-md-4">
-			<ul class="list-group"></ul>
+	<div class="row   col-md-8">
+		<div class="panel panel-warning">
+		  <div class="panel-heading">Simple Todo List: (using ConnectDb)</div>
+		  <div class="panel-body">
+			<div class="col-md-5">
+			  <div class="form-group">
+			    <label for="todo">Add Todo</label>
+			    <input type="text" class="form-control todo" placeholder="Todo">
+			  </div>
+			  <button class="btn btn-default add">Add</button>
+			  <button class="btn btn-default delete">Delete All</button>
+			  <div class="alert alert-success">
+			  	<b>Success!!!</b>
+			  </div>
+			</div>
+			<div class="col-md-7">
+				<ul class="list-group"></ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -26,6 +36,7 @@
 
 <script>
 	$(document).ready(function() {
+		$('.alert').hide();
 		if(_db.isKey('todos')) {
 			var data = _db.getJSON('todos');
 			data.forEach(function(d) {
@@ -44,6 +55,7 @@
 				$('ul').append('<li class="list-group-item" >'+$('.todo').val()+'<label class="label label-danger close_box pull-right">x</label></li>');
 				data.push({'name': $('.todo').val()});
 				_db.update('todos', data);
+				$('.alert').fadeIn().delay(100).fadeOut();
 			}
 		});
 
