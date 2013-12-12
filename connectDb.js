@@ -31,12 +31,17 @@
 			}
 		},
 
+		//Check if the key exist
+		isKey : function(key) {
+			return localStorage[key] ? true : false;
+		},
+
 		//Clear any existing db completely *
 		clear : function() {
 			localStorage.clear();
 			return true;
 		},
-		
+
 		//Create New Collection or Db
 		createRow : function (key, value) {
 			if(!localStorage[key]) {
@@ -80,6 +85,12 @@
 		//Check the size of JSON array		
 		length : function (key) {
 			return JSON.parse(localStorage[key]).length;
+		},
+
+		//Update the key value pari
+		update : function(key, data) {
+			localStorage.clear(key);
+			_db.setJSON(key,data);
 		},
 
 		//Secure Storage using session
