@@ -7,6 +7,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <style type="text/css">
 	body { background: #0C293A; }
+	.row { top:100px; }
 </style>
 <div class="container">
 	<div class="row   col-md-8">
@@ -18,8 +19,8 @@
 			    <label for="todo">Add Todo</label>
 			    <input type="text" class="form-control todo" placeholder="Todo">
 			  </div>
-			  <button class="btn btn-default add">Add</button>
-			  <button class="btn btn-default delete">Delete All</button>
+			  <button class="btn btn-success add">Add</button>
+			  <button class="btn btn-danger delete">Delete All</button>
 			  <div class="alert alert-success">
 			  	<b>Success!!!</b>
 			  </div>
@@ -40,15 +41,12 @@
 		if(_db.isKey('todos')) {
 			var data = _db.getJSON('todos');
 			data.forEach(function(d) {
-				$('ul')
-					.append('<li class="list-group-item" >'+d['name']+'<label class="label label-danger close_box pull-right">x</label></li>');
+				$('ul').append('<li class="list-group-item" >'+d['name']+'<label class="label label-danger close_box pull-right">x</label></li>');
 			});
 		} else {
-			//Create a db
 			var data = _db.setJSON('todos', []);
-			window.d = data;
 		}
-
+		//On click add to todolist
 		$('.add').click(function() {
 			//get the value from todos
 			if($('.todo').val()) {
@@ -58,9 +56,10 @@
 				$('.alert').fadeIn().delay(100).fadeOut();
 			}
 		});
-
+		//On click delete all localdata
 		$('.delete').click(function() {
 			_db.clear();
+			location.reload();
 		});
 	});
 
