@@ -36,7 +36,7 @@
 			localStorage.clear();
 			return true;
 		},
-
+		
 		//Create New Collection or Db
 		createRow : function (key, value) {
 			if(!localStorage[key]) {

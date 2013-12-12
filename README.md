@@ -50,6 +50,11 @@ Check if any db exists.
 _db.isempty();
 ```
 
+Check if key already exists
+```html
+_db.isKey(key);
+```
+
 Clear complete db if exist.
 ```html
 _db.clear();
@@ -87,7 +92,10 @@ Retrieve JSON array from DB using Key
 ```html
 _db.getJSON(key);
 ```
-
+Update a db using key with JSON data
+```html
+_db.update(key, json);
+```
 Create secure row using Key, Value pair
 ```html
 _db.createSecureRow(key, value);
