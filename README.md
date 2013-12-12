@@ -92,7 +92,7 @@ Retrieve JSON array from DB using Key
 ```html
 _db.getJSON(key);
 ```
-Update a db using key with JSON data
+Update existing row using key with JSON data
 ```html
 _db.update(key, json);
 ```
