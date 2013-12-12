@@ -135,3 +135,7 @@ Contributing:
 License
 -------
 This software is free to use under the GNU license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/BastinRobin/connectdb.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
