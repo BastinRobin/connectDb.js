@@ -10,7 +10,7 @@
 	//Initialization of ConnectDB Framework
 	_db = {
 		version : "0.1",
-		date : "25/Nov/2013",
+		   date : "25/Nov/2013",
 		//DB means the key, value pair
 		//Check if the browser supports ConnectDB
 		//ConnectDb is a part of HTML5 Offline Storage and NoSQL technology*
